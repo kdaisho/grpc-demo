@@ -33,7 +33,7 @@ This adds a new todo while printing a list of todos.
 
 Currently, server and client live in the same repository, and `server.js` is running on `node`.
 
-| Task                                                                                                                                  | Status      | Link                                                                                                                                         |
+| Task                                                                                                                                  | Status      | Repository                                                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Putting server and client in separate repos while keeping the same functionalities                                                    | Done        | [grpc-demo-v2-server](https://github.com/kdaisho/grpc-demo-v2-server), [grpc-demo-v2-client](https://github.com/kdaisho/grpc-demo-v2-client) |
 | Running server.js in `deno` by either using gRPC packages for deno (they seem immature though), or using npm packages with `jspm` CDN | In progress | N/A                                                                                                                                          |
