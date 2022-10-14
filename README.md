@@ -1,12 +1,13 @@
 # gRPC Demo: Todo list
 
-This is a demo that utilizes gRPC clients for Node.js.
-When `client.js` is ran, `createTodo` service is triggered then a todo gets created.
+When you run `client.js`, `createTodo` service (defined in `todo.proto`) adds a new todo while printing a list of todos.
 
-- @grpc/grpc-js
-- @grpc/proto-loader
+## Dependencies
 
-## How to run
+- [@grpc/grpc-js](https://www.npmjs.com/package/@grpc/grpc-js)
+- [@grpc/proto-loader](https://www.npmjs.com/package/@grpc/proto-loader)
+
+## Steps to play
 
 ### Install dependencies
 
@@ -25,3 +26,15 @@ node server
 ```
 node client "read a book"
 ```
+
+This adds a new todo while printing a list of todos.
+
+## Next steps
+
+Currently, server and client live in the same repository, and `server.js` is running on `node`.
+
+So the next steps are;
+
+- Putting them in separate repos while keeping the same functionalities
+- Running server.js in `deno` (by either using gRPC packages for deno (they seem immature though), or using npm packages with `jspm` CDN)
+- Running server.ts in `deno`

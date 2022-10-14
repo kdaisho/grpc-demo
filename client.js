@@ -17,7 +17,7 @@ client.createTodo(
     text,
   },
   (err, response) => {
-    console.log("[create] 🚀", response);
+    console.log("[new] 🚀", response);
   }
 );
 
@@ -28,6 +28,6 @@ client.readTodos(null, (err, response) => {
 
 const call = client.readTodosStream();
 call.on("data", (item) => {
-  console.log("[stream] ⚡️", item);
+  console.log("[streaming todo list] ⚡️", item);
 });
 call.on("end", () => console.log("server done!"));
